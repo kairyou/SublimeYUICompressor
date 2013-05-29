@@ -1,0 +1,10 @@
+
+Open a .js or .css file, press F7 to build width YUI Compressor.
+
+Messages will show in the Console panel.
+When an error message appears, you can double-click it to jump the file and line.
+
+Fixed match filename for build system.
+
+yuicompressor:
+https://github.com/yui/yuicompressor/downloads

@@ -1,0 +1,21 @@
+{
+	/*"cmd": [
+		"java",
+		"-jar", "${packages}/SublimeYUICompressor/bin/yuicompressor-2.4.7.jar",
+		"--charset", "GB18030",
+		"-o", "${file_base_name}.min.${file_extension}",
+		"$file"
+	],*/
+	// Use .sh and .cmd for file_regex(Because YUICompressor cant't output the file path)
+	"cmd": [
+		"sh",
+		"${packages}/SublimeYUICompressor/bin/build.sh",
+		"$file"
+	],
+	"file_regex": "] (.*) ([0-9]*):([0-9]*)",
+	"selector": "source.js, source.css",
+	"encoding": "cp936",
+    "windows": {
+        "cmd": ["${packages}/SublimeYUICompressor/bin/build.cmd", "$file"]
+    }
+}
